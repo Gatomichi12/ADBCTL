@@ -2,7 +2,7 @@
 Este lanzamiento lo hago porque hay algunas personas como yo que no saben usar ADB, así que aquí está ADBCTL. 
 Está hecho con ayuda de DeepSeek porque realmente no sé mucho sobre programar.
 
-Funciona en Linux, Windows y macOS, pero en Windows estoy teniendo problemas para que funcione. Aún no se si funciona en MacOS.
+Funciona en Linux, Windows y MacOS, pero en Windows estoy teniendo problemas para que funcione. Aún no se si funciona en MacOS.
 
 **Disclaimer:** ADBCTL es software de código abierto que usa muchos scripts proporcionados sin garantías. Eres responsable de cualquier cambio que realices en tu dispositivo.
 
