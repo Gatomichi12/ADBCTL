@@ -1,6 +1,6 @@
 # ADBCTL (Android Debug Bridge Control)
 Este lanzamiento lo hago porque hay algunas personas como yo que no saben usar ADB, así que aquí está ADBCTL. 
-Está hecho con ayuda de DeepSeek porque realmente no sé mucho sobre programar.
+Está hecho con ayuda de DeepSeek porque realmente no sé mucho sobre bash.
 
 Funciona en Linux, Windows y MacOS, pero en Windows estoy teniendo problemas para que funcione. Aún no se si funciona en MacOS.
 
