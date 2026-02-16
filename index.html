@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El rincón de Jostin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 40px;
+        }
+
+        .layout {
+            display: flex;
+            gap: 20px;
+            padding: 20px 40px;
+            align-items: flex-start;
+        }
+
+        .columna-izquierda {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar-derecha {
+            flex: 1;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        /* Tarjetas base */
+        main, section, .tarjeta-link, .tarjeta-nota {
+            padding: 40px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        /* Estilo específico para la nota del PD */
+        .tarjeta-nota {
+            border-left: 5px solid #f1c40f; /* Un borde amarillo para resaltar que es un aviso */
+        }
+
+        .tarjeta-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            background-color: #fcfcfc;
+        }
+
+        p { font-size: 1.0rem; line-height: 1.6; margin: 10px 0; }
+        h2 { margin-top: 0; font-size: 1.3rem; color: #2c3e50; }
+
+        .bio-lista { list-style: none; padding: 0; margin: 0; }
+        .bio-lista li {
+            font-size: 1.0rem;
+            line-height: 1.6;
+            color: #222;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        .bio-lista li::before {
+            content: "✔";
+            color: #2ecc71;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+
+        .redes-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .red-social-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .red-social-item i {
+            margin-right: 15px;
+            font-size: 1.2rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .facebook { color: #1877F2; }
+        .x-twitter { color: #000000; }
+        .instagram { color: #E4405F; }
+        .tiktok { color: #000000; }
+        .pinterest { color: #BD081C; }
+
+        .red-social-item:hover {
+            background-color: #eee;
+            transform: translateX(5px);
+        }
+
+        .foto-michi {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 800px) {
+            .layout { flex-direction: column; }
+            .sidebar-derecha { width: 100%; box-sizing: border-box; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>El rincón de Jostin</h1>
+    </header>
+
+    <div class="layout">
+        <div class="columna-izquierda">
+            <main>
+                <h2>Holasss</h2>
+                <p>Gracias por entrar aqui, es mi sitio web, está hecho con mucha determinacion y cariño =3.</p>
+            </main>
+
+            <section>
+                <h2>Sobre mi: </h2>
+                <ul class="bio-lista">
+                    <li>Soy Jostin lol.</li>
+                    <li>Me dedico a cosas random con Linux, soy algo avanzado en eso.</li>
+                    <li>Estoy abierto para nuevos amigos xd.</li>
+                </ul>
+            </section>
+
+            <a href="https://gatomichi12.duckdns.org/nextcloud" class="tarjeta-link">
+                <h2>Ir a mi servidor de Nextcloud →</h2>
+                <p>Dale click para llevarte ahi bro. Necesitarás una cuenta para entrar al servidor, no la puedes crear tu, yo la tengo que crear por alguna razón pero está bien; solo avisame.</p>
+                <p>Espera unos cuantos segundos cuando entres, es normal que dure un poco.</p>
+            </a>
+
+            <div class="tarjeta-nota">
+                <p><strong>Nota importante:</strong> Mi server ni este sitio funcionaran si no está prendida mi PC, pero estará disponible lo mas que pueda.</p>
+            </div>
+        </div>
+
+        <aside class="sidebar-derecha">
+            <h2>Mis Redes</h2>
+            <div class="redes-container">
+                <a href="https://www.facebook.com/people/Jostin-Murillo-Lopez/pfbid033KPUicABKB5A7vb5gQh39Jo1nSzjyhzYD2pCniKTaHsyJKHYvwc8pbf4AuXuPh2Kl/" class="red-social-item facebook">
+                    <i class="fa-brands fa-facebook"></i> Facebook
+                </a>
+                <a href="https://x.com/Gatomichi1212" class="red-social-item x-twitter">
+                    <i class="fa-brands fa-x-twitter"></i> X
+                </a>
+                <a href="https://instagram.com/ckoo133" class="red-social-item instagram">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.tiktok.com/@gatomichi1212" class="red-social-item tiktok">
+                    <i class="fa-brands fa-tiktok"></i> TikTok
+                </a>
+                <a href="https://pinterest.com/Gatomichi12/" class="red-social-item pinterest">
+                    <i class="fa-brands fa-pinterest"></i> Pinterest
+                </a>
+            </div>
+            
+            <p>Eso es todo, me encargaré de tener todo funcionando correctamente.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0GnejR6f3FN6zbhMjT7l_vRxUvRaJvtrXA&s" 
+                 alt="Foto de un gatito (michi)" class="foto-michi">
+        </aside>
+    </div>
+
+</body>
+</html>
