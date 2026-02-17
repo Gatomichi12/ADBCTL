@@ -26,7 +26,7 @@ Linux:
 1. Abre una terminal en la carpeta donde lo descargaste.
 2. Ejecuta: `unzip adbctl-linux-v0.3.0-beta.zip` (Descomprime el .zip)
 3. Ejecuta: `chmod +x adbctl` (lo hace ejecutable)
-4. Ejecuta: `sudo mv adbctl /bin/` (lo instala para que lo puedas usar)
+4. Ejecuta: `sudo mv ./adbctl /bin o /usr/local/bin/` (lo instala para que lo puedas usar)
 5. Ejecuta: adbctl
 
 macOS: ¯|_(ツ)_|¯
